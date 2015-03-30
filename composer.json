@@ -1,5 +1,5 @@
 {
-  "name": "yii2mod/timezone",
+  "name": "yii2mod/yii2-timezone",
   "description": "Timezone helper",
   "type": "yii2-extension",
   "keywords": ["yii2", "component"],
