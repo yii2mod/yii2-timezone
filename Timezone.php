@@ -1,14 +1,13 @@
 <?php
+
 namespace yii2mod\timezone;
 
 use Yii;
 use yii\base\Component;
 use yii\web\Controller;
 
-
 /**
  * Class Timezone
- * @author Dmitry Semenov <disemx@gmail.com>
  * @package yii2mod\timezone
  */
 class Timezone extends Component
@@ -17,6 +16,7 @@ class Timezone extends Component
      * @var string
      */
     public $actionRoute = '/site/timezone';
+
     /**
      * @var timezone name (ex: Europe/Kiev)
      */
@@ -27,7 +27,7 @@ class Timezone extends Component
      */
     public function init()
     {
-        $this->name = \Yii::$app->session->get('timezone');
+        $this->name = Yii::$app->session->get('timezone');
         if ($this->name == null) {
             $this->registerTimezoneScript($this->actionRoute);
             $this->name = date_default_timezone_get();
@@ -41,7 +41,7 @@ class Timezone extends Component
      */
     public function registerTimezoneScript($actionRoute)
     {
-        \Yii::$app->on(Controller::EVENT_BEFORE_ACTION, function ($event) use ($actionRoute) {
+        Yii::$app->on(Controller::EVENT_BEFORE_ACTION, function ($event) use ($actionRoute) {
             $view = $event->sender->view;
             $js = <<<JS
                 var timezone = '';
