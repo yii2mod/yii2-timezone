@@ -1,5 +1,8 @@
+Yii 2 Timezone
+==============
 Timezone component for Yii 2
-=========
+
+[![Latest Stable Version](https://poser.pugx.org/yii2mod/yii2-timezone/v/stable)](https://packagist.org/packages/yii2mod/yii2-timezone) [![Total Downloads](https://poser.pugx.org/yii2mod/yii2-timezone/downloads)](https://packagist.org/packages/yii2mod/yii2-timezone) [![License](https://poser.pugx.org/yii2mod/yii2-timezone/license)](https://packagist.org/packages/yii2mod/yii2-timezone)
 
 Installation   
 ------------
