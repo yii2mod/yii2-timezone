@@ -25,6 +25,8 @@ to the require section of your composer.json.
 
 Usage
 ------------
+> Currently firefox and edge browsers are not supported.
+
 Once the extension is installed, simply add component to your main config file:
 
 ```php
